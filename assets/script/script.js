@@ -5,6 +5,30 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function toggleButton(toggleId, cardId) {
+  let toggleEl = document.getElementById(toggleId);
+  let cardEl = document.getElementById(cardId);
+  let isOn = toggleEl.classList.contains("fa-toggle-on");
+
+  if (!isOn) {
+    toggleEl.classList.remove("fa-toggle-off");
+    toggleEl.classList.add("fa-toggle-on");
+    cardEl.classList.remove("cardNone");
+    cardEl.classList.add("cardFlex");
+  } else {
+    toggleEl.classList.remove("fa-toggle-on");
+    toggleEl.classList.add("fa-toggle-off");
+
+    cardEl.classList.remove("cardFlex");
+    cardEl.classList.add("cardNone");
+  }
+}
+
+let toggle1 = document.getElementById("toggle1");
+toggle1.addEventListener("click", () => {
+  toggleButton("toggle1", "card1");
+});
+
 let button1 = document.getElementById("button1");
 
 button1.addEventListener("click", () => {
@@ -29,6 +53,12 @@ function crazySum(a, b) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let toggle2 = document.getElementById("toggle2");
+toggle2.addEventListener("click", () => {
+  toggleButton("toggle2", "card2");
+});
+
 let button2 = document.getElementById("button2");
 
 button2.addEventListener("click", () => {
@@ -51,6 +81,11 @@ function boundary(number) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let toggle3 = document.getElementById("toggle3");
+toggle3.addEventListener("click", () => {
+  toggleButton("toggle3", "card3");
+});
+
 let button3 = document.getElementById("button3");
 
 button3.addEventListener("click", () => {
@@ -72,6 +107,12 @@ function reverseString(stringInput) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let toggle4 = document.getElementById("toggle4");
+toggle4.addEventListener("click", () => {
+  toggleButton("toggle4", "card4");
+});
+
 let button4 = document.getElementById("button4");
 
 button4.addEventListener("click", () => {
@@ -96,7 +137,6 @@ function upperFirst(stringInput) {
         ) + " ";
     });
     stringOutput.trim();
-    console.log(arrString);
     return stringOutput;
   }
 }
@@ -106,6 +146,12 @@ function upperFirst(stringInput) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let toggle5 = document.getElementById("toggle5");
+toggle5.addEventListener("click", () => {
+  toggleButton("toggle5", "card5");
+});
+
 let button5 = document.getElementById("button5");
 
 button5.addEventListener("click", () => {
@@ -135,6 +181,11 @@ function giveMeRandom(n) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let toggle6 = document.getElementById("toggle6");
+toggle6.addEventListener("click", () => {
+  toggleButton("toggle6", "card6");
+});
+
 let button6 = document.getElementById("button6");
 
 button6.addEventListener("click", () => {
@@ -159,6 +210,11 @@ function area(l1, l2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let toggle7 = document.getElementById("toggle7");
+toggle7.addEventListener("click", () => {
+  toggleButton("toggle7", "card7");
+});
 
 let button7 = document.getElementById("button7");
 
@@ -188,6 +244,11 @@ function crazyDiff(inputNumber) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let toggle8 = document.getElementById("toggle8");
+toggle8.addEventListener("click", () => {
+  toggleButton("toggle8", "card8");
+});
+
 let button8 = document.getElementById("button8");
 
 button8.addEventListener("click", () => {
@@ -216,6 +277,11 @@ function codify(textInput) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let toggle9 = document.getElementById("toggle9");
+toggle9.addEventListener("click", () => {
+  toggleButton("toggle9", "card9");
+});
+
 let button9 = document.getElementById("button9");
 
 button9.addEventListener("click", () => {
@@ -240,6 +306,10 @@ function check3and7(numberInput) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let toggle10 = document.getElementById("toggle10");
+toggle10.addEventListener("click", () => {
+  toggleButton("toggle10", "card10");
+});
 
 let button10 = document.getElementById("button10");
 
@@ -261,6 +331,6 @@ function cutString(textInput) {
       .trim()
       .replace(textFirstLetter, "")
       .replace(textLastLetter, "");
-    return `Il testo "${textInput}" senza le lettere "${textFirstLetter}" e "${textLastLetter}" diventa ${newText}`;
+    return `Il testo "${textInput}" senza le lettere "${textFirstLetter}" e "${textLastLetter}" diventa "${newText}"`;
   }
 }

@@ -3,77 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <title>Epicode M2 W3 D1</title>
   </head>
   <body>
-    <div class="containerEsercizio">
-      <h2>Esercizio 1</h2>
-      <label for="num1">Numero 1</label>
-      <input type="number" id="num1" placeholder="Numero 1" />
-      <label for="num2">Numero 2</label>
-      <input type="number" id="num2" placeholder="Numero 2" />
-      <button id="button1">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio 2</h2>
-      <label for="text1">Numero 1</label>
-      <input type="number" id="num3" placeholder="Numero 1" />
-      <button id="button2">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio 3</h2>
-      <label for="num3">Inserisci testo</label>
-      <input type="text" id="text1" placeholder="Inserisci testo" />
-      <button id="button3">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio 4</h2>
-      <label for="text2">Inserisci testo</label>
-      <input type="text" id="text2" placeholder="Inserisci testo" />
-      <button id="button4">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio 5</h2>
-      <label for="num4">Inserisci n numeri</label>
-      <input type="number" id="num4" placeholder="Inserisci numero" />
-      <button id="button5">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio Extra 1</h2>
-      <label for="num5">Base rettangolo</label>
-      <input type="number" id="num5" placeholder="Inserisci numero" />
-      <label for="num6">Altezza retangolo</label>
-      <input type="number" id="num6" placeholder="Inserisci numero" />
-      <button id="button6">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio Extra 2</h2>
-      <label for="num7">Inserisci numero</label>
-      <input type="number" id="num7" placeholder="Inserisci numero" />
+    <main>
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio 1</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle1"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card1">
+          <label for="num1">Numero 1</label>
+          <input type="number" id="num1" placeholder="Numero 1" />
+          <label for="num2">Numero 2</label>
+          <input type="number" id="num2" placeholder="Numero 2" />
+          <button id="button1">Invia</button>
+        </div>
+      </div>
 
-      <button id="button7">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio Extra 3</h2>
-      <label for="text3">Inserisci numero</label>
-      <input type="text" id="text3" placeholder="Inserisci numero" />
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio 2</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle2"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card2">
+          <label for="text1">Numero 1</label>
+          <input type="number" id="num3" placeholder="Numero 1" />
+          <button id="button2">Invia</button>
+        </div>
+      </div>
 
-      <button id="button8">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio Extra 4</h2>
-      <label for="num8">Inserisci numero</label>
-      <input type="number" id="num8" placeholder="Inserisci numero" />
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio 3</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle3"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card3">
+          <label for="num3">Inserisci testo</label>
+          <input type="text" id="text1" placeholder="Inserisci testo" />
+          <button id="button3">Invia</button>
+        </div>
+      </div>
 
-      <button id="button9">Invia</button>
-    </div>
-    <div class="containerEsercizio">
-      <h2>Esercizio Extra 5</h2>
-      <label for="text4">Inserisci testo</label>
-      <input type="text" id="text4" placeholder="Inserisci numero" />
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio 4</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle4"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card4">
+          <label for="text2">Inserisci testo</label>
+          <input type="text" id="text2" placeholder="Inserisci testo" />
+          <button id="button4">Invia</button>
+        </div>
+      </div>
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio 5</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle5"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card5">
+          <label for="num4">Inserisci n numeri</label>
+          <input type="number" id="num4" placeholder="Inserisci numero" />
+          <button id="button5">Invia</button>
+        </div>
+      </div>
 
-      <button id="button10">Invia</button>
-    </div>
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio Extra 1</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle6"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card6">
+          <label for="num5">Base rettangolo</label>
+          <input type="number" id="num5" placeholder="Inserisci numero" />
+          <label for="num6">Altezza retangolo</label>
+          <input type="number" id="num6" placeholder="Inserisci numero" />
+          <button id="button6">Invia</button>
+        </div>
+      </div>
+
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio Extra 2</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle7"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card7">
+          <label for="num7">Inserisci numero</label>
+          <input type="number" id="num7" placeholder="Inserisci numero" />
+          <button id="button7">Invia</button>
+        </div>
+      </div>
+
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio Extra 3</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle8"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card8">
+          <label for="text3">Inserisci testo</label>
+          <input type="text" id="text3" placeholder="Inserisci testo" />
+          <button id="button8">Invia</button>
+        </div>
+      </div>
+
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio Extra 4</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle9"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card9">
+          <label for="num8">Inserisci numero</label>
+          <input type="number" id="num8" placeholder="Inserisci numero" />
+          <button id="button9">Invia</button>
+        </div>
+      </div>
+
+      <div class="containerEsercizio">
+        <div class="topContainer">
+          <h2>Esercizio Extra 5</h2>
+          <i class="fa-solid fa-toggle-off" id="toggle10"></i>
+        </div>
+        <div class="esercizioCard cardNone" id="card10">
+          <label for="text4">Inserisci testo</label>
+          <input type="text" id="text4" placeholder="Inserisci testo" />
+          <button id="button10">Invia</button>
+        </div>
+      </div>
+    </main>
+
     <script src="assets/script/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b8761b87ac.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+h2, i {
+    display: inline-block
+}
+
+i {
+    font-size: 20px;
+    margin-left: 15px
+}
+
+.containerEsercizio {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 223, 42, 0.24);
+    border: 4px solid rgb(255, 223, 42);
+    box-shadow: 6px 6px 10px rgba(100, 86, 7, 0.67);
+    border-radius: 12px;
+    cursor: pointer;
+    scale: 1;
+    transition: scale 0.3s ease-in-out
+}
+
+.containerEsercizio::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    pointer-events: none;
+    opacity: 0.12;
+    transition: opacity 0.3s ease-out
+}
+
+.containerEsercizio:hover::after {
+    opacity: 0;
+}
+
+.containerEsercizio:hover {
+    scale: 1.15
+}
+
+.containerEsercizio input {
+    position: relative;
+    z-index: 10;
+}
+
+.topContainer, .esercizioCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.esercizioCard {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px
+}
+
+.cardNone {
+    display: none;
+}
+
+.cardFlex {
+    display: flex;
+}
+
+button {
+    background-color: rgba(127, 250, 248, 0.426);
+    border: 2px solid rgb(87, 255, 163);
+    padding: 4px;
+    border-radius: 10px
+}
